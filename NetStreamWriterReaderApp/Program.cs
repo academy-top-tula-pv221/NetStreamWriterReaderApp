@@ -21,12 +21,17 @@ string[] ptext = {
 //        writer.WriteLine(line);
 //}
 
-using(StreamReader reader = new StreamReader(path))
+//using(StreamReader reader = new StreamReader(path))
+//{
+//    //string textRead = reader.ReadToEnd();
+//    //Console.WriteLine(textRead);
+//    string line = reader.ReadLine();
+//    Console.WriteLine(line);
+//    //while((line = reader.ReadLine()) != null)
+//    //    Console.WriteLine(line);
+//}
+
+using(StreamWriter writer = new StreamWriter(path))
 {
-    //string textRead = reader.ReadToEnd();
-    //Console.WriteLine(textRead);
-    string line = reader.ReadLine();
-    Console.WriteLine(line);
-    //while((line = reader.ReadLine()) != null)
-    //    Console.WriteLine(line);
+    writer.WriteLine(Console.ReadLine());
 }
